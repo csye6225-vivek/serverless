@@ -30,7 +30,7 @@ def send_email(to_addr, subject, body):
 
 def generate_verification_link(user_uuid):
     """Function to generate a verification link."""
-    return f"http://saivivekanand.me:8080/v1/user/verify_email?token={user_uuid}"
+    return f"https://saivivekanand.me/v1/user/verify_email?token={user_uuid}"
 
 def record_email_sent_time(user_uuid, email):
     """Function to record the email sent time into the Cloud SQL database."""
